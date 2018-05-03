@@ -7,7 +7,9 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
-    "rebuild": "npm run clean; npm run build"
+    "rebuild": "npm run clean; npm run build",
+    "test": "./test/index.coffee",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "eyes": "^0.1.8"
