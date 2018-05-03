@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+npm-debug.log
+*_book
+
+.tmp
+trash
+
+/**/bower_components
+/**/node_modules
+/**/dist
+/**/build
+
+lerna-debug.log
+package.json.lerna_backup
+yarn*

@@ -1,0 +1,12 @@
+{
+	"name": "cfx.coffee",
+	"version": "0.0.0",
+	"scripts": {
+		"lernaclean": "npx lerna clean --yes",
+		"lernabootstrap": "npx lerna bootstrap",
+		"rebootstrap": "npm run lernaclean; npm run lernabootstrap"
+	},
+	"devDependencies": {
+		"lerna": "^2.11.0"
+	}
+}

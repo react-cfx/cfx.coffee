@@ -1,0 +1,23 @@
+{
+  "name": "ddeyes",
+  "version": "0.0.7",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 dist/module.js",
+    "rebuild": "npm run clean; npm run build",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "eyes": "^0.1.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-es2015": "^7.0.0-beta.46",
+    "coffeescript": "^2.3.0",
+    "shelljs": "^0.8.1"
+  }
+}
