@@ -10,15 +10,13 @@ defaultConf =
   stream: process.stdout
   maxLength: 204800
 
-getDD = (opts) =>
-  inspector {
+export {
+  ddbs
+}
+
+export default (data, opts) =>
+  inspect = inspector {
     defaultConf...
     opts...
   }
-
-export {
-  ddbs
-  getDD
-}
-
-export default inspector defaultConf
+  inspect data

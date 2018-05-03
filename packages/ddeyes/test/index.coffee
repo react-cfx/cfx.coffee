@@ -18,3 +18,7 @@ target.all = ->
     e: =>
   echo a
   dd a
+  dd a
+  ,
+    hideFunctions: false
+
