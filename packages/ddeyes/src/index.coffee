@@ -4,12 +4,21 @@ ddbs = (args...) =>
   console.log.apply null
   , args
 
-export {
-  ddbs
-}
-
-export default inspector
+defaultConf = 
   pretty: true
   hideFunctions: true
   stream: process.stdout
   maxLength: 204800
+
+getDD = (opts) =>
+  inspector {
+    defaultConf...
+    opts...
+  }
+
+export {
+  ddbs
+  getDD
+}
+
+export default inspector defaultConf
