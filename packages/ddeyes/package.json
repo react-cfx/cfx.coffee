@@ -1,8 +1,8 @@
 {
   "name": "ddeyes",
   "version": "0.0.7",
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
+  "main": "dist/index.js",
+  "module": "dist/moudle.js",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf ./dist",

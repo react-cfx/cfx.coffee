@@ -1,0 +1,25 @@
+{
+  "name": "cfx.babel",
+  "version": "0.0.11",
+  "main": "dist/index.js",
+  "module": "dist/module.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./dist ./trash",
+    "build": "coffee -o ./dist/module.js ./src/index.coffee; babel -o ./dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 ./dist/module.js",
+    "rebuild": "npm run clean; npm run build",
+    "test": "npm run rebuild; coffee -o ./trash/index.js ./test/index.coffee; babel -o ./trash/test.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 ./trash/index.js; chmod +x ./trash/test.js; sed -i \"1 i#!/usr/bin/env node\" ./trash/test.js"
+  },
+  "devDependencies": {
+    "babylon": "^6.18.0",
+    "coffeescript": "^2.3.0",
+    "ddeyes": "^0.0.7",
+    "shelljs": "^0.8.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-es2015": "^7.0.0-beta.46",
+    "@babel/preset-stage-3": "^7.0.0-beta.46"
+  }
+}
