@@ -1,1 +1,1 @@
-# cfx.coffee.babel
+# cfx.babel
