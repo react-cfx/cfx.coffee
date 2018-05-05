@@ -127,7 +127,7 @@ export default (plugins) =>
     #     return curExtension if Module._extensions[curExtension]
     #   '.js'
 
-    Module::load = (filePath) =>
+    Module::load = (filePath) ->
 
       { id } = plugins.reduce (r, {
         name
