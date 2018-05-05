@@ -8,4 +8,4 @@ export default (
     coffee()
   ]
 
-  register()
+  register

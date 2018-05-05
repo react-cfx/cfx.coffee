@@ -48,6 +48,7 @@ target.require = ->
     coffee()
   ]
 
+  # do gdf await CS.require path.join __dirname, './coffee'
   do gdf await CS.require './coffee'
 
 target.coffee = ->

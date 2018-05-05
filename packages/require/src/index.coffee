@@ -8,6 +8,11 @@ import requireFromString from 'require-from-string'
 
 export gdf = (obj) => obj.default
 
+getParentFilename = (parent = module.parent) =>
+  if parent.parent?
+  then getParentFilename parent.parent
+  else parent.filename
+
 export default (plugins) =>
 
   ### plugins like
@@ -31,8 +36,8 @@ export default (plugins) =>
   ###
 
   require: (
-    requirePath 
-    parentPath = module.parent.filename
+    requirePath
+    parentPath = getParentFilename()
   ) =>
 
     requireFile = path.join(
@@ -65,8 +70,8 @@ export default (plugins) =>
       console.error e
 
   requireAsync: (
-    requirePath 
-    parentPath = module.parent.filename
+    requirePath
+    parentPath = getParentFilename()
   ) =>
 
     requireFile = path.join(
