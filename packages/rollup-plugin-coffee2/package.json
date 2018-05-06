@@ -13,8 +13,8 @@
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-es2015": "^7.0.0-beta.46",
     "@babel/preset-stage-3": "^7.0.0-beta.46",
-    "cfx.require-plugin-coffee": "^0.0.20",
-    "ddeyes": "^0.0.20",
+    "cfx.require-plugin-coffee": "^0.0.8",
+    "ddeyes": "^0.0.7",
     "shelljs": "^0.8.1"
   },
   "dependencies": {

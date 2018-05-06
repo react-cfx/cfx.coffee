@@ -2,9 +2,11 @@
 	"name": "cfx.coffee",
 	"version": "0.0.0",
 	"scripts": {
-		"lernaclean": "npx lerna clean --yes",
-		"lernabootstrap": "npx lerna bootstrap",
-		"rebootstrap": "npm run lernaclean; npm run lernabootstrap"
+		"lernaclean": "lerna clean --yes",
+		"lernabootstrap": "lerna bootstrap",
+		"rebootstrap": "npm run lernaclean; npm run lernabootstrap",
+		"cleanall": "lerna run clean; lerna exec -- rm -rf ./yarn*; npm run lernaclean",
+		"rebootall": "npm run cleanall; npm run lernabootstrap"
 	},
 	"devDependencies": {
 		"lerna": "^2.11.0"

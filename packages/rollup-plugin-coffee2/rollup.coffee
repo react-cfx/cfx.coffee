@@ -3,8 +3,8 @@ import cleanup from 'rollup-plugin-cleanup'
 # import commonjs from 'rollup-plugin-commonjs';
 
 import coffee2 from './src'
-# import coffee2 from './dist/bundle'
-# } from 'cfx.rollup-plugin-coffee2'
+# import coffee2 from './dist/main.js'
+# from 'cfx.rollup-plugin-coffee2'
 
 conf = (output) => {
   input: './src/index.coffee'
