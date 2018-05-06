@@ -1,6 +1,6 @@
 {
   "name": "ddeyes",
-  "version": "0.0.20",
+  "version": "0.0.7",
   "main": "dist/index.js",
   "module": "dist/moudle.js",
   "license": "MIT",

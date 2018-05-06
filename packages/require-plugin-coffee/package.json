@@ -1,12 +1,13 @@
 {
   "name": "cfx.require-plugin-coffee",
-  "version": "0.0.20",
+  "version": "0.0.8",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "coffee -o ./dist/module/ ./src/*.coffee; babel -d ./dist/main --presets @babel/preset-es2015 --presets @babel/preset-stage-3 ./dist/module/*.js",
-    "rebuild": "npm run clean; npm run build"
+    "rebuild": "npm run clean; npm run build",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "ddeyes": "^0.0.20",
