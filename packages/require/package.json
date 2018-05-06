@@ -1,6 +1,6 @@
 {
   "name": "cfx.require",
-  "version": "0.0.8",
+  "version": "0.2.0",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "postinstall": "npm run build"
   },
   "devDependencies": {
-    "ddeyes": "^0.0.7"
+    "ddeyes": "^0.2.0"
   },
   "dependencies": {
     "@babel/cli": "^7.0.0-beta.46",
