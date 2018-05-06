@@ -1,8 +1,12 @@
 {
   "name": "cfx.rollup-plugin-coffee2",
-  "version": "0.2.0",
+  "version": "0.2.1-0",
   "main": "dist/main.js",
   "module": "dist/main.es.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "rollup -c",
@@ -13,8 +17,8 @@
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-es2015": "^7.0.0-beta.46",
     "@babel/preset-stage-3": "^7.0.0-beta.46",
-    "cfx.require-plugin-coffee": "^0.2.0",
-    "ddeyes": "^0.2.0",
+    "cfx.require-plugin-coffee": "^0.2.1-0",
+    "ddeyes": "^0.2.1-0",
     "shelljs": "^0.8.1"
   },
   "dependencies": {

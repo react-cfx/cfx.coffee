@@ -1,9 +1,12 @@
 {
   "name": "ddeyes",
-  "version": "0.2.0",
+  "version": "0.2.1-0",
   "main": "dist/index.js",
   "module": "dist/moudle.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",

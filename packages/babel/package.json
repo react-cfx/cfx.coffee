@@ -1,9 +1,12 @@
 {
   "name": "cfx.babel",
-  "version": "0.2.0",
+  "version": "0.2.1-0",
   "main": "dist/index.js",
   "module": "dist/module.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rm -rf ./dist ./trash",
     "build": "coffee -o ./dist/module.js ./src/index.coffee; babel -o ./dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 ./dist/module.js",
@@ -14,7 +17,7 @@
   "devDependencies": {
     "babylon": "^6.18.0",
     "coffeescript": "^2.3.0",
-    "ddeyes": "^0.2.0",
+    "ddeyes": "^0.2.1-0",
     "shelljs": "^0.8.1"
   },
   "dependencies": {
