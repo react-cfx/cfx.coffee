@@ -6,6 +6,7 @@ import * as babylon from 'babylon'
 import traverse from '@babel/traverse'
 import generator from '@babel/generator'
 import * as t from '@babel/types'
+import transform from 'cfx.babel'
 
 # real coffee file Path
 rCFPath = (filePath) =>
@@ -88,9 +89,10 @@ getAST = (source) =>
       'asyncGenerators'
     ]
     
-
-ASTToCode = (ast) =>
-  ( generator ast ).code
+ASTToCode = (ast, es = true) =>
+  if es is false
+  then transform ast
+  else ( generator ast ).code
 
 export {
   rCFPath
