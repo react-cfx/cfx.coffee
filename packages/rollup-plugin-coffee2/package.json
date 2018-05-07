@@ -1,6 +1,6 @@
 {
   "name": "cfx.rollup-plugin-coffee2",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/main.js",
   "module": "dist/main.es.js",
   "license": "MIT",
@@ -8,9 +8,9 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf ./dist",
-    "build": "rollup -c",
-    "rebuild": "npm run clean; npm run build",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "rebuild": "gulp rebuild",
     "postinstall": "npm run build"
   },
   "devDependencies": {
@@ -25,8 +25,14 @@
     "@babel/traverse": "^7.0.0-beta.46",
     "@babel/types": "^7.0.0-beta.46",
     "babylon": "next",
+    "cfx.babel": "^0.2.1",
     "cfx.require-plugin-coffee": "^0.2.1",
     "coffeescript": "^2.3.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-better-rollup": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^1.0.0",
     "rollup": "^0.58.2",
     "rollup-plugin-cleanup": "^3.0.0-beta.1",
     "rollup-pluginutils": "^2.0.1"
