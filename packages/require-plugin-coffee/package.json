@@ -1,6 +1,6 @@
 {
   "name": "cfx.require-plugin-coffee",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-es2015": "^7.0.0-beta.46",
     "@babel/preset-stage-3": "^7.0.0-beta.46",
-    "cfx.babel": "^0.2.5",
+    "cfx.babel": "^0.2.6",
     "cfx.require": "^0.2.1",
     "coffeescript": "^2.3.0",
     "shelljs": "^0.8.1"
