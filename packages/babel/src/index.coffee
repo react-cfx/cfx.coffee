@@ -18,6 +18,9 @@ export default (codeOrAst, opts) =>
       "@babel/preset-es2015"
       "@babel/preset-stage-3"
     ]
+    plugins: [
+      '@babel/plugin-transform-runtime'
+    ]
 
   { code } = transform codeOrAst
   , {
