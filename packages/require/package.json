@@ -2,25 +2,26 @@
   "name": "cfx.require",
   "version": "0.2.1",
   "main": "dist/main/index.js",
-  "module": "dist/module/index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "autod": "autod",
     "clean": "rm -rf ./dist",
     "build": "coffee -o ./dist/module/ ./src/*.coffee; babel -d ./dist/main --presets @babel/preset-es2015 --presets @babel/preset-stage-3 ./dist/module/*.js",
     "rebuild": "npm run clean; npm run build",
     "postinstall": "npm run build"
   },
   "devDependencies": {
+    "autod": "^3.0.1",
     "ddeyes": "^0.2.1"
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-es2015": "^7.0.0-beta.46",
-    "@babel/preset-stage-3": "^7.0.0-beta.46",
-    "require-from-string": "^2.0.2"
+    "@babel/cli": "~7.0.0-beta.47",
+    "@babel/core": "~7.0.0-beta.47",
+    "@babel/preset-es2015": "~7.0.0-beta.47",
+    "@babel/preset-stage-3": "~7.0.0-beta.47",
+    "require-from-string": "~2.0.2"
   }
 }

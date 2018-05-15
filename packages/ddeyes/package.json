@@ -2,12 +2,12 @@
   "name": "ddeyes",
   "version": "0.2.1",
   "main": "dist/index.js",
-  "module": "dist/moudle.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "autod": "autod",
     "clean": "rm -rf ./dist",
     "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-es2015 --presets @babel/preset-stage-3 dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
     "rebuild": "npm run clean; npm run build",
@@ -15,14 +15,15 @@
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "eyes": "^0.1.8"
+    "eyes": "~0.1.8"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-es2015": "^7.0.0-beta.46",
-    "@babel/preset-stage-3": "^7.0.0-beta.46",
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-es2015": "^7.0.0-beta.47",
+    "@babel/preset-stage-3": "^7.0.0-beta.47",
+    "autod": "^3.0.1",
     "coffeescript": "^2.3.0",
-    "shelljs": "^0.8.1"
+    "shelljs": "^0.8.2"
   }
 }
