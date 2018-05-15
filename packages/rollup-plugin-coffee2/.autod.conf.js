@@ -6,10 +6,14 @@ module.exports = {
   plugin: '',
   test: [],
   dep: [
+    '@babel/core',
     '@babel/generator',
     '@babel/traverse',
     '@babel/types',
-    'babylon',
+    '@babel/runtime',
+    '@babel/preset-es2015',
+    '@babel/preset-stage-3',
+    '@babel/plugin-transform-runtime',
     'cfx.babel',
     'cfx.require-plugin-coffee',
     'coffeescript',
@@ -23,12 +27,12 @@ module.exports = {
     'rollup-pluginutils',
   ],
   devdep: [
-    '@babel/core',
-    '@babel/preset-es2015',
-    '@babel/preset-stage-3',
     'autod',
     'ddeyes',
     'shelljs'
+  ],
+  semver: [
+    'babylon@next'
   ],
   exclude: [
     './node_modules/*',
