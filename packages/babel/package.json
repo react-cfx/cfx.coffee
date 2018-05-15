@@ -1,6 +1,6 @@
 {
   "name": "cfx.babel",
-  "version": "0.2.6",
+  "version": "0.2.8",
   "main": "dist/index.js",
   "license": "MIT",
   "publishConfig": {
@@ -18,7 +18,7 @@
     "autod": "^3.0.1",
     "babylon": "^6.18.0",
     "coffeescript": "^2.3.0",
-    "ddeyes": "^0.2.1",
+    "ddeyes": "^0.2.8",
     "shelljs": "^0.8.2"
   },
   "dependencies": {
