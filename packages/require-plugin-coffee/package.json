@@ -23,8 +23,8 @@
     "@babel/core": "~7.0.0-beta.47",
     "@babel/preset-es2015": "~7.0.0-beta.47",
     "@babel/preset-stage-3": "~7.0.0-beta.47",
-    "cfx.babel": "^0.2.8",
-    "cfx.require": "^0.2.8",
+    "cfx.babel": "~0.2.8",
+    "cfx.require": "~0.2.8",
     "coffeescript": "~2.3.0",
     "shelljs": "~0.8.2"
   }
