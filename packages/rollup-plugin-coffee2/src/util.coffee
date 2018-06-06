@@ -89,9 +89,9 @@ getAST = (source) =>
       'asyncGenerators'
     ]
     
-ASTToCode = (ast, es = true) =>
+ASTToCode = (ast, es = true, opts) =>
   if es is false
-  then transform ast
+  then transform ast, opts
   else ( generator ast ).code
 
 export {

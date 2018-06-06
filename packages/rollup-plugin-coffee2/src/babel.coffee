@@ -30,6 +30,7 @@ export default (opts = {}) =>
     _code = ASTToCode(
       getAST code
       false
+      opts.opts
     )
 
     _code
