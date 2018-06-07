@@ -5,12 +5,11 @@
       "npmClient": "yarn",
       "loglevel": "info",
       "registry": "https://registry.npm.taobao.org",
-      "ignore": [
-      ]
+      "ignore": []
     }
   },
   "packages": [
     "packages/*"
   ],
-  "version": "0.2.10"
+  "version": "0.2.11"
 }
