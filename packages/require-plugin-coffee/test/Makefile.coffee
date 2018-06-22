@@ -13,7 +13,8 @@ import {
 
 import getRequire, { gdf } from 'cfx.require'
 
-import coffee from '../dist/main'
+# import coffee from '../dist/main'
+import coffee from '../src'
 import _coffee from './coffee'
 
 target.all = ->
@@ -48,8 +49,9 @@ target.require = ->
     coffee()
   ]
 
-  # do gdf await CS.require path.join __dirname, './coffee'
-  do gdf await CS.require './coffee'
+  do gdf await CS.require './coffee/inside'
+  do gdf await CS.require path.join __dirname, './coffee/inside'
+  # do gdf await CS.require './coffee'
 
 target.coffee = ->
 

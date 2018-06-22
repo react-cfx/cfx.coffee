@@ -1,4 +1,3 @@
-import dd from 'ddeyes'
+import inside from './inside'
 
-export default ->
-  dd 'Hello Coffee!!!'
+export default => inside()

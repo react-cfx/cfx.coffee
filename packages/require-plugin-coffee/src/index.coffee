@@ -1,4 +1,4 @@
-# import dd from 'ddeyes'
+import dd from 'ddeyes'
 import CoffeeScript from 'coffeescript'
 import {
   coffee2ToEs6
@@ -11,4 +11,5 @@ export default (ops) =>
   exts: CoffeeScript.FILE_EXTENSIONS
 
   compiler: (code, id) =>
+    # dd id
     es6ToEs5 coffee2ToEs6 code
