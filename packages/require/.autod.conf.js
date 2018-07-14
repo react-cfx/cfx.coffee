@@ -8,8 +8,10 @@ module.exports = {
   dep: [
     '@babel/cli',
     '@babel/core',
-    '@babel/preset-es2015',
+    '@babel/preset-env',
     '@babel/preset-stage-3',
+    '@babel/plugin-transform-runtime',
+    '@babel/runtime',
     'require-from-string'
   ],
   devdep: [

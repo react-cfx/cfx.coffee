@@ -6,13 +6,15 @@ module.exports = {
   plugin: '',
   test: [],
   dep: [
-    'eyes'
+    'eyes',
+    '@babel/runtime'
   ],
   devdep: [
     '@babel/cli',
     '@babel/core',
-    '@babel/preset-es2015',
+    '@babel/preset-env',
     '@babel/preset-stage-3',
+    '@babel/plugin-transform-runtime',
     'autod',
     'coffeescript',
     'shelljs'

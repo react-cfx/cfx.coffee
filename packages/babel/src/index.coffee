@@ -15,7 +15,7 @@ export default (codeOrAst, opts) =>
 
   options =
     presets: [
-      "@babel/preset-es2015"
+      "@babel/preset-env"
       "@babel/preset-stage-3"
     ]
     plugins: [

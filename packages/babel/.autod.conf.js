@@ -9,7 +9,7 @@ module.exports = {
     '@babel/cli',
     '@babel/core',
     '@babel/plugin-transform-runtime',
-    '@babel/preset-es2015',
+    '@babel/preset-env',
     '@babel/preset-stage-3',
     '@babel/runtime'
   ],
@@ -19,6 +19,9 @@ module.exports = {
     'coffeescript',
     'ddeyes',
     'shelljs'
+  ],
+  semver: [
+    'babylon@next'
   ],
   exclude: [
     './node_modules/*',

@@ -9,7 +9,7 @@
   "scripts": {
     "autod": "autod",
     "clean": "rm -rf ./dist",
-    "build": "coffee -o ./dist/module/ ./src/*.coffee; babel -d ./dist/main --presets @babel/preset-es2015 --presets @babel/preset-stage-3 ./dist/module/*.js",
+    "build": "coffee -o ./dist/module/ ./src/*.coffee; babel -d ./dist/main --presets @babel/preset-env --presets @babel/preset-stage-3 --plugins @babel/plugin-transform-runtime ./dist/module/*.js",
     "rebuild": "npm run clean; npm run build",
     "postinstall": "npm run build"
   },
@@ -19,14 +19,16 @@
     "shelljs": "^0.8.2"
   },
   "dependencies": {
-    "@babel/cli": "~7.0.0-beta.49",
-    "@babel/core": "~7.0.0-beta.49",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.51",
-    "@babel/preset-es2015": "~7.0.0-beta.49",
-    "@babel/preset-stage-3": "~7.0.0-beta.49",
-    "cfx.babel": "^0.2.11",
-    "cfx.require": "^0.2.11",
+    "@babel/cli": "~7.0.0-beta.53",
+    "@babel/core": "~7.0.0-beta.53",
+    "@babel/plugin-transform-runtime": "~7.0.0-beta.53",
+    "@babel/preset-env": "~7.0.0-beta.53",
+    "@babel/preset-stage-3": "~7.0.0-beta.53",
+    "@babel/runtime": "~7.0.0-beta.53",
+    "cfx.babel": "~0.2.11",
+    "cfx.require": "~0.2.11",
     "coffeescript": "~2.3.1",
+    "ddeyes": "~0.2.11",
     "shelljs": "~0.8.2"
   }
 }
