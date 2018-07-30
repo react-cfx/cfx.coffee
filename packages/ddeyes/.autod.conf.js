@@ -13,7 +13,6 @@ module.exports = {
     '@babel/cli',
     '@babel/core',
     '@babel/preset-env',
-    '@babel/preset-stage-3',
     '@babel/plugin-transform-runtime',
     'autod',
     'coffeescript',

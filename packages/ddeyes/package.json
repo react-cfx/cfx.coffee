@@ -9,21 +9,21 @@
   "scripts": {
     "autod": "autod",
     "clean": "rm -rf ./dist",
-    "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-env --presets @babel/preset-stage-3 --plugins @babel/plugin-transform-runtime dist/module.js; sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
+    "fixInspectCall": "sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
+    "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-env --plugins @babel/plugin-transform-runtime dist/module.js; npm run fixInspectCall",
     "rebuild": "npm run clean; npm run build",
     "test": "./test/index.coffee",
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "@babel/runtime": "~7.0.0-beta.53",
+    "@babel/runtime": "~7.0.0-beta.55",
     "eyes": "~0.1.8"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.53",
-    "@babel/core": "^7.0.0-beta.53",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.53",
-    "@babel/preset-env": "^7.0.0-beta.53",
-    "@babel/preset-stage-3": "^7.0.0-beta.53",
+    "@babel/cli": "^7.0.0-beta.55",
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
     "autod": "^3.0.1",
     "coffeescript": "^2.3.1",
     "shelljs": "^0.8.2"

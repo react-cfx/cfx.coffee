@@ -16,7 +16,6 @@ export default (codeOrAst, opts) =>
   options =
     presets: [
       "@babel/preset-env"
-      "@babel/preset-stage-3"
     ]
     plugins: [
       '@babel/plugin-transform-runtime'

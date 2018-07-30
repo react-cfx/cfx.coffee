@@ -10,7 +10,6 @@ module.exports = {
     '@babel/core',
     '@babel/plugin-transform-runtime',
     '@babel/preset-env',
-    '@babel/preset-stage-3',
     '@babel/runtime'
   ],
   devdep: [

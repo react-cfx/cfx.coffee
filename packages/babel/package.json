@@ -9,9 +9,9 @@
   "scripts": {
     "autod": "autod",
     "clean": "rm -rf ./dist ./trash",
-    "build": "coffee -o ./dist/module.js ./src/index.coffee; babel -o ./dist/index.js --presets @babel/preset-env --presets @babel/preset-stage-3 --plugins @babel/plugin-transform-runtime ./dist/module.js",
+    "build": "coffee -o ./dist/module.js ./src/index.coffee; babel -o ./dist/index.js --presets @babel/preset-env --plugins @babel/plugin-transform-runtime ./dist/module.js",
     "rebuild": "npm run clean; npm run build",
-    "test": "npm run rebuild; coffee -o ./trash/index.js ./test/index.coffee; babel -o ./trash/test.js --presets @babel/preset-env --presets @babel/preset-stage-3 --plugin @babel/plugin-transform-runtime ./trash/index.js; chmod +x ./trash/test.js; sed -i \"1 i#!/usr/bin/env node\" ./trash/test.js",
+    "test": "npm run rebuild; coffee -o ./trash/index.js ./test/index.coffee; babel -o ./trash/test.js --presets @babel/preset-env --plugin @babel/plugin-transform-runtime ./trash/index.js; chmod +x ./trash/test.js; sed -i \"1 i#!/usr/bin/env node\" ./trash/test.js",
     "postinstall": "npm run build"
   },
   "devDependencies": {
@@ -22,11 +22,11 @@
     "shelljs": "^0.8.2"
   },
   "dependencies": {
-    "@babel/cli": "~7.0.0-beta.53",
-    "@babel/core": "~7.0.0-beta.53",
-    "@babel/plugin-transform-runtime": "~7.0.0-beta.53",
-    "@babel/preset-env": "~7.0.0-beta.53",
-    "@babel/preset-stage-3": "~7.0.0-beta.53",
-    "@babel/runtime": "~7.0.0-beta.53"
+    "@babel/cli": "~7.0.0-beta.55",
+    "@babel/core": "~7.0.0-beta.55",
+    "@babel/plugin-transform-runtime": "~7.0.0-beta.55",
+    "@babel/preset-env": "~7.0.0-beta.55",
+    "@babel/preset-stage-3": "~7.0.0-beta.55",
+    "@babel/runtime": "~7.0.0-beta.55"
   }
 }

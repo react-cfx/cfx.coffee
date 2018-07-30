@@ -12,7 +12,6 @@ module.exports = {
     '@babel/types',
     '@babel/runtime',
     '@babel/preset-env',
-    '@babel/preset-stage-3',
     '@babel/plugin-transform-runtime',
     'babylon',
     'cfx.babel',

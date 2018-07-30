@@ -9,7 +9,7 @@
   "scripts": {
     "autod": "autod",
     "clean": "rm -rf ./dist",
-    "build": "coffee -o ./dist/module/ ./src/*.coffee; babel -d ./dist/main --presets @babel/preset-env --presets @babel/preset-stage-3 --plugins @babel/plugin-transform-runtime ./dist/module/*.js",
+    "build": "coffee -o ./dist/module/ ./src/*.coffee; babel -d ./dist/main --presets @babel/preset-env --plugins @babel/plugin-transform-runtime ./dist/module/*.js",
     "rebuild": "npm run clean; npm run build",
     "postinstall": "npm run build"
   },
@@ -18,12 +18,11 @@
     "ddeyes": "^0.2.12"
   },
   "dependencies": {
-    "@babel/cli": "~7.0.0-beta.53",
-    "@babel/core": "~7.0.0-beta.53",
-    "@babel/plugin-transform-runtime": "~7.0.0-beta.53",
-    "@babel/preset-env": "~7.0.0-beta.53",
-    "@babel/preset-stage-3": "~7.0.0-beta.53",
-    "@babel/runtime": "~7.0.0-beta.53",
+    "@babel/cli": "~7.0.0-beta.55",
+    "@babel/core": "~7.0.0-beta.55",
+    "@babel/plugin-transform-runtime": "~7.0.0-beta.55",
+    "@babel/preset-env": "~7.0.0-beta.55",
+    "@babel/runtime": "~7.0.0-beta.55",
     "require-from-string": "~2.0.2"
   }
 }
