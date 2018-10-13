@@ -1,5 +1,5 @@
 {
-  "lerna": "2.11.0",
+  "lerna": "3.4.3",
   "command": {
     "bootstrap": {
       "npmClient": "yarn",
@@ -11,5 +11,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.2.13"
+  "version": "0.2.14"
 }

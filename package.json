@@ -1,6 +1,6 @@
 {
   "name": "cfx.coffee",
-  "version": "0.0.0",
+  "version": "0.2.14",
   "scripts": {
     "lernaclean": "lerna clean --yes",
     "lernabootstrap": "lerna bootstrap",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "autod": "^3.0.1",
-    "lerna": "^3.0.0-rc.0"
+    "lerna": "^3.4.3"
   },
   "dependencies": {
 
