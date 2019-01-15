@@ -1,8 +1,7 @@
 # import dd from 'ddeyes'
 import del from 'del'
 
-import gulp from 'gulp'
-import gulpSequence from 'gulp-sequence'
+import gulp, { series } from 'gulp'
 import rename from 'gulp-rename'
 
 import rollup from 'gulp-better-rollup'
@@ -45,14 +44,14 @@ gulp.task 'buildCjs', =>
 
 gulp.task 'build'
 ,
-  gulpSequence(
+  series(
     'buildEs'
     'buildCjs'
   )
 
 gulp.task 'rebuild'
 ,
-  gulpSequence(
+  series(
     'clean'
     'build'
   )

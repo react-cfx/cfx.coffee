@@ -21,7 +21,6 @@ module.exports = {
     'gulp',
     'gulp-better-rollup',
     'gulp-rename',
-    'gulp-sequence',
     'rollup',
     'rollup-plugin-cleanup',
     'rollup-pluginutils',
