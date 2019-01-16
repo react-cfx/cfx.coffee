@@ -6,6 +6,17 @@ import {
 
 export default (codeOrAst, opts) =>
 
+  {
+    runtime
+    ast
+    othopts...
+  } = opts
+
+  ast = {
+    ast...
+    othopts...
+  }
+
   transform =
     if typeof codeOrAst is 'string'
     then transformSync
@@ -18,13 +29,21 @@ export default (codeOrAst, opts) =>
       "@babel/preset-env"
     ]
     plugins: [
-      '@babel/plugin-transform-runtime'
+      (
+        if runtime? is true
+        then [ '@babel/plugin-transform-runtime' ]
+        else []
+      )...
     ]
 
   { code } = transform codeOrAst
   , {
     options...
-    opts...
+    (
+      if ast?
+      then opts.ast
+      else {}
+    )...
   }
 
   code
