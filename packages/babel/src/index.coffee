@@ -4,18 +4,11 @@ import {
   transformFromAst
 } from '@babel/core'
 
-export default (codeOrAst, opts) =>
-
-  {
-    runtime
-    ast
-    othopts...
-  } = opts
-
-  ast = {
-    ast...
-    othopts...
-  }
+export default (
+  codeOrAst
+  needRuntime = true
+  astOpts = {}
+) =>
 
   transform =
     if typeof codeOrAst is 'string'
@@ -30,7 +23,7 @@ export default (codeOrAst, opts) =>
     ]
     plugins: [
       (
-        if runtime? is true
+        if needRuntime? is true
         then [ '@babel/plugin-transform-runtime' ]
         else []
       )...
@@ -39,11 +32,7 @@ export default (codeOrAst, opts) =>
   { code } = transform codeOrAst
   , {
     options...
-    (
-      if ast?
-      then opts.ast
-      else {}
-    )...
+    astOpts...
   }
 
   code
