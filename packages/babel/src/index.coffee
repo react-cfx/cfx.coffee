@@ -6,7 +6,7 @@ import {
 
 export default (
   codeOrAst
-  opts
+  opts = {}
 ) =>
   needRuntime = true
   astOpts = opts
