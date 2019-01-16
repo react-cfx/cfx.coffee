@@ -28,7 +28,9 @@ export default (
     ]
     plugins: [
       (
-        if needRuntime? is true
+        if needRuntime? and (
+          needRuntime is true
+        )
         then [ '@babel/plugin-transform-runtime' ]
         else []
       )...
