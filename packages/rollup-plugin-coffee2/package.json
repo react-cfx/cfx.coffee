@@ -27,8 +27,8 @@
     "@babel/traverse": "~7.2.3",
     "@babel/types": "~7.2.2",
     "babylon": "~7.0.0-beta.47",
-    "cfx.babel": "^0.2.17",
-    "cfx.require-plugin-coffee": "^0.2.17",
+    "cfx.babel": "~0.2.17",
+    "cfx.require-plugin-coffee": "~0.2.17",
     "coffeescript": "~2.3.2",
     "del": "~3.0.0",
     "gulp": "~4.0.0",
@@ -36,7 +36,6 @@
     "gulp-rename": "~1.4.0",
     "rollup": "~1.1.0",
     "rollup-plugin-cleanup": "~3.1.0",
-    "rollup-pluginutils": "~2.3.3",
-    "run-sequence": "~2.2.1"
+    "rollup-pluginutils": "~2.3.3"
   }
 }

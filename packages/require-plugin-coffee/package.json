@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "autod": "^3.0.1",
-    "ddeyes": "^0.2.14",
+    "ddeyes": "^0.2.15",
     "shelljs": "^0.8.3"
   },
   "dependencies": {
@@ -24,10 +24,10 @@
     "@babel/plugin-transform-runtime": "~7.2.0",
     "@babel/preset-env": "~7.2.3",
     "@babel/runtime": "~7.2.0",
-    "cfx.babel": "^0.2.17",
-    "cfx.require": "^0.2.15",
+    "cfx.babel": "~0.2.17",
+    "cfx.require": "~0.2.15",
     "coffeescript": "~2.3.2",
-    "ddeyes": "^0.2.15",
+    "ddeyes": "~0.2.15",
     "shelljs": "~0.8.3"
   }
 }

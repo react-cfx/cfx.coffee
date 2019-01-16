@@ -24,6 +24,8 @@ module.exports = {
   ],
   exclude: [
     './node_modules/*',
-    './.autod.conf.js'
+    './.autod.conf.js',
+    './dist',
+    './trash'
   ]
 };
