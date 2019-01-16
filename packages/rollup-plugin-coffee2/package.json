@@ -1,6 +1,6 @@
 {
   "name": "cfx.rollup-plugin-coffee2",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "main": "dist/index.js",
   "license": "MIT",
   "publishConfig": {
@@ -27,8 +27,8 @@
     "@babel/traverse": "~7.2.3",
     "@babel/types": "~7.2.2",
     "babylon": "~7.0.0-beta.47",
-    "cfx.babel": "^0.2.16",
-    "cfx.require-plugin-coffee": "^0.2.16",
+    "cfx.babel": "^0.2.17",
+    "cfx.require-plugin-coffee": "^0.2.17",
     "coffeescript": "~2.3.2",
     "del": "~3.0.0",
     "gulp": "~4.0.0",
