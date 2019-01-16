@@ -88,7 +88,7 @@ getAST = (source) =>
       'objectRestSpread'
       'asyncGenerators'
     ]
-    
+
 ASTToCode = (ast, es = true, opts) =>
   if es is false
   then transform ast, opts

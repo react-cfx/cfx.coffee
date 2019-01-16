@@ -6,9 +6,14 @@ import {
 
 export default (
   codeOrAst
-  needRuntime = true
-  astOpts = {}
+  opts
 ) =>
+  needRuntime = true
+  astOpts = opts
+  {
+    needRuntime
+    astOpts...
+  } = opts if opts.needRuntime?
 
   transform =
     if typeof codeOrAst is 'string'
