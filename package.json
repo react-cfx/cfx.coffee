@@ -11,8 +11,8 @@
     "updated": "lerna run autod; lerna updated"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
-    "lerna": "^3.10.5"
+    "autod": "^3.1.0",
+    "lerna": "^3.15.0"
   },
   "dependencies": {
 
