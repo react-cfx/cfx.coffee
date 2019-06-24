@@ -1,6 +1,6 @@
 {
   "name": "ddeyes",
-  "version": "0.2.15",
+  "version": "0.2.22",
   "main": "dist/index.js",
   "license": "MIT",
   "publishConfig": {
