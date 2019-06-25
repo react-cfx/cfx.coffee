@@ -1,6 +1,6 @@
 {
   "name": "cfx.rollup-plugin-coffee2",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "main": "dist/index.js",
   "module": "dist/es/index.js",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "autod": "^3.1.0",
-    "ddeyes": "^0.2.22",
+    "ddeyes": "^0.2.23",
     "shelljs": "^0.8.3"
   },
   "dependencies": {
@@ -28,8 +28,8 @@
     "@babel/traverse": "~7.4.5",
     "@babel/types": "~7.4.4",
     "babylon": "~7.0.0-beta.47",
-    "cfx.babel": "^0.2.22",
-    "cfx.require-plugin-coffee": "^0.2.22",
+    "cfx.babel": "^0.2.23",
+    "cfx.require-plugin-coffee": "^0.2.23",
     "coffeescript": "~2.4.1",
     "del": "~4.1.1",
     "gulp": "~4.0.2",
