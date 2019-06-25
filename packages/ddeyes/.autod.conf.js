@@ -7,6 +7,7 @@ module.exports = {
   test: [],
   dep: [
     'eyes',
+    'replace',
     '@babel/runtime'
   ],
   devdep: [

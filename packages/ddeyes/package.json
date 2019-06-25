@@ -9,7 +9,7 @@
   "scripts": {
     "autod": "autod",
     "clean": "rm -rf ./dist",
-    "fixInspectCall": "sed -i \"s/(0, _eyes.inspector)/_eyes.inspector/g\" dist/index.js",
+    "fixInspectCall": "replace '(0, _eyes.inspector)' '_eyes.inspector' dist/index.js",
     "build": "coffee -o ./dist/module.js ./src; babel -o dist/index.js --presets @babel/preset-env --plugins @babel/plugin-transform-runtime dist/module.js; npm run fixInspectCall",
     "rebuild": "npm run clean; npm run build",
     "test": "./test/index.coffee",
@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@babel/runtime": "~7.4.5",
-    "eyes": "~0.1.8"
+    "eyes": "~0.1.8",
+    "replace": "^1.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
