@@ -19,14 +19,15 @@
     "shelljs": "^0.8.3"
   },
   "dependencies": {
-    "@babel/cli": "~7.4.4",
-    "@babel/core": "~7.4.5",
-    "@babel/plugin-transform-runtime": "~7.4.4",
-    "@babel/preset-env": "~7.4.5",
-    "@babel/runtime": "~7.4.5",
-    "cfx.babel": "^0.2.23",
-    "cfx.require": "^0.2.23",
+    "@babel/cli": "~7.6.0",
+    "@babel/core": "~7.6.0",
+    "@babel/plugin-transform-runtime": "~7.6.0",
+    "@babel/preset-env": "~7.6.0",
+    "@babel/runtime": "~7.6.0",
+    "cfx.babel": "~0.2.23",
+    "cfx.require": "~0.2.23",
     "coffeescript": "~2.4.1",
+    "ddeyes": "~0.2.23",
     "shelljs": "~0.8.3"
   }
 }
