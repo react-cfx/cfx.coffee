@@ -1,6 +1,6 @@
 {
   "name": "cfx.require-plugin-coffee",
-  "version": "0.2.23",
+  "version": "0.2.24",
   "main": "dist/main/index.js",
   "license": "MIT",
   "publishConfig": {
@@ -24,10 +24,10 @@
     "@babel/plugin-transform-runtime": "~7.6.0",
     "@babel/preset-env": "~7.6.0",
     "@babel/runtime": "~7.6.0",
-    "cfx.babel": "~0.2.23",
-    "cfx.require": "~0.2.23",
+    "cfx.babel": "^0.2.24",
+    "cfx.require": "^0.2.24",
     "coffeescript": "~2.4.1",
-    "ddeyes": "~0.2.23",
+    "ddeyes": "^0.2.24",
     "shelljs": "~0.8.3"
   }
 }
