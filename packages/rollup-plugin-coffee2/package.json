@@ -20,23 +20,23 @@
     "shelljs": "^0.8.3"
   },
   "dependencies": {
-    "@babel/core": "~7.6.0",
-    "@babel/generator": "~7.6.0",
-    "@babel/plugin-transform-runtime": "~7.6.0",
-    "@babel/preset-env": "~7.6.0",
-    "@babel/runtime": "~7.6.0",
-    "@babel/traverse": "~7.6.0",
-    "@babel/types": "~7.6.1",
+    "@babel/core": "~7.7.2",
+    "@babel/generator": "~7.7.2",
+    "@babel/plugin-transform-runtime": "~7.6.2",
+    "@babel/preset-env": "~7.7.1",
+    "@babel/runtime": "~7.7.2",
+    "@babel/traverse": "~7.7.2",
+    "@babel/types": "~7.7.2",
     "babylon": "~7.0.0-beta.47",
-    "cfx.babel": "^0.2.24",
-    "cfx.require-plugin-coffee": "^0.2.24",
+    "cfx.babel": "~0.2.24",
+    "cfx.require-plugin-coffee": "~0.2.24",
     "coffeescript": "~2.4.1",
     "del": "~5.1.0",
     "gulp": "~4.0.2",
     "gulp-better-rollup": "~4.0.1",
     "gulp-rename": "~1.4.0",
-    "rollup": "~1.21.2",
+    "rollup": "~1.27.0",
     "rollup-plugin-cleanup": "~3.1.1",
-    "rollup-pluginutils": "~2.8.1"
+    "rollup-pluginutils": "~2.8.2"
   }
 }
