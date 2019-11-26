@@ -1,57 +1,16 @@
 # import dd from 'ddeyes'
-import del from 'del'
-
+import path from 'path'
 import gulp, { series } from 'gulp'
-import rename from 'gulp-rename'
+import task from '../src/gulp'
 
-import rollup from 'gulp-better-rollup'
-import {
-  coffee2
-  babel
-} from '../src'
+join = (dir) =>
+  path.join __dirname, dir 
 
-import cleanup from 'rollup-plugin-cleanup'
+task {
+  gulp
+  series
+  join
+}
 
-gulp.task 'clean', (cb) =>
-  del [ './dist' ]
-  , cb
-
-gulp.task 'buildEs', =>
-
-  gulp.src './src/index.coffee'
-  .pipe rollup
-    plugins: [
-      coffee2
-        bare: true
-        sourceMap: true
-      cleanup()
-    ]
-  , 'es'
-  .pipe rename 'index.js'
-  .pipe gulp.dest './dist/es'
-
-gulp.task 'buildCjs', =>
-
-  gulp.src './dist/es/index.js'
-  .pipe rollup
-    plugins: [
-      babel()
-      cleanup()
-    ]
-  , 'cjs'
-  .pipe rename 'index.js'
-  .pipe gulp.dest './dist'
-
-gulp.task 'build'
-,
-  series(
-    'buildEs'
-    'buildCjs'
-  )
-
-gulp.task 'rebuild'
-,
-  series(
-    'clean'
-    'build'
-  )
+gulp.task 'default'
+  , series 'rebuild'

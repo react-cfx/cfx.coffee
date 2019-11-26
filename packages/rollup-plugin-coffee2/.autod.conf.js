@@ -17,10 +17,12 @@ module.exports = {
     'cfx.babel',
     'cfx.require-plugin-coffee',
     'coffeescript',
+
     'del',
     'gulp',
     'gulp-better-rollup',
     'gulp-rename',
+
     'rollup',
     'rollup-plugin-cleanup',
     'rollup-pluginutils',
