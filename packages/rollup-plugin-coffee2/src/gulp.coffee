@@ -6,6 +6,28 @@ import cleanup from 'rollup-plugin-cleanup'
 import coffee2 from './coffee2'
 import babel from './babel'
 
+gulpTask = (
+  gulp
+  {
+    plugins
+    format
+    fileName = 'index.js'
+    index
+    dest
+  }
+) =>
+  gulp.src index
+  .pipe(
+    rollup
+      plugins: [
+        plugins...
+        cleanup()
+      ]
+    , format
+  )
+  .pipe rename fileName
+  .pipe gulp.dest dest
+
 tasks =
 
   clean: (_dirs) =>
@@ -23,36 +45,40 @@ tasks =
     {
       index
       dest
+      fileName
     }
   ) => =>
-    gulp.src index
-    .pipe rollup
+    gulpTask gulp
+    , {
       plugins: [
         coffee2
           bare: true
           sourceMap: true
-        cleanup()
       ]
-    , 'es'
-    .pipe rename 'index.js'
-    .pipe gulp.dest dest
+      format: 'es'
+      fileName
+      index
+      dest
+    }
 
   buildCjs: (
     gulp
     {
       index
       dest
+      fileName
     }
   ) => =>
-    gulp.src index
-    .pipe rollup
+    gulpTask gulp
+    , {
       plugins: [
         babel()
-        cleanup()
       ]
-    , 'cjs'
-    .pipe rename 'index.js'
-    .pipe gulp.dest dest
+      format: 'cjs'
+      fileName
+      index
+      dest
+    }
 
   build: (series) =>
     series(
