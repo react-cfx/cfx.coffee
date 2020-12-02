@@ -1,7 +1,7 @@
 pjName := cfx.coffee
 
 docker:
-	docker run \
+	podman run \
 		--name ${pjName} \
 		--rm \
 		-ti \
@@ -10,7 +10,7 @@ docker:
 		/bin/bash
 
 in:
-	docker exec \
+	podman exec \
 		-ti \
 		${pjName} \
 		/bin/bash

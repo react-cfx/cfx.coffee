@@ -11,10 +11,10 @@
     "updated": "lerna run autod; lerna updated"
   },
   "devDependencies": {
-    "autod": "^3.1.0",
-    "lerna": "^3.19.0"
+    "autod": "^3.1.1",
+    "coffeescript": "^2.5.1",
+    "gulp-cli": "^2.3.0",
+    "lerna": "^3.22.1"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }

@@ -7,8 +7,10 @@ module.exports = {
   test: [],
   dep: [],
   devdep: [
-    'autod',
-    'lerna'
+    'autod'
+  , 'lerna'
+  , 'gulp-cli'
+  , 'coffeescript'
   ],
   exclude: [
     './packages',
